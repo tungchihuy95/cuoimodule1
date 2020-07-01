@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello</title>
+</head>
+<body>
+<script>
+  function findMax() {
+    let scoreArray = [5,4,8,7,10,9];
+    let Max = scoreArray[0];
+        for (let i = 0; i < scoreArray.length;i++) {
+          if (scoreArray[i] > Max) {
+            Max = scoreArray[i];
+          }
+    }
+    alert(Max) ;
+  }
+  findMax();
+</script>
+</body>
+</html>
