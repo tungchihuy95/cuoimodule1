@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello</title>
+</head>
+<body>
+<script>
+  let inputNum = +prompt("Nhập vào mot so: ");
+  function  isFibonacci(x) {
+    if (x == 1 || x == 2) {
+      alert('thuoc day Fibo');
+    }
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    while (c < x) {
+      a = b;
+      b = c;
+      c = a + b;
+    }
+    if (c == x){
+      alert(x + " thuoc day so Fibo");
+    } else {
+      alert(x + " Khong thuoc day so Fibo");
+    }
+  }
+  isFibonacci(inputNum);
+</script>
+</body>
+</html>
