@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello</title>
+</head>
+<body>
+<script>
+  let numCheck = +prompt('Nhap mot so can kiem tra:')
+  function tryRemoveFromArray(x) {
+    let intNum = [3,5,2,7,8,4];
+    for (let i = 0; i < intNum.length; i++) {
+      if (intNum[i] == x) {
+        intNum.splice(i,1);
+      }
+    }
+    alert(intNum);
+  }
+  tryRemoveFromArray(numCheck);
+</script>
+</body>
+</html>
